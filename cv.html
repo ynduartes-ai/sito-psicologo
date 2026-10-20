@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Dr. Salvatore Traina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f3f3f0;
+            --panel: #f5f7f1;
+            --line: #b9d7b5;
+            --green: #a7c7aa;
+            --green-deep: #6a9a73;
+            --text: #1e2a21;
+            --muted: #3d4d42;
+            --shadow: rgba(30, 42, 33, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(180deg, #eae8e1 0%, #f5f5f3 100%);
+            color: var(--text);
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .cv-shell {
+            background: rgba(255,255,255,0.35);
+            border: 1px solid rgba(115, 136, 120, 0.2);
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            padding: 22px 24px 28px;
+        }
+
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 999px;
+            padding: 10px 18px;
+            font-weight: 600;
+            transition: 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .btn-home {
+            background: #f0f3ee;
+            border-color: rgba(69, 90, 74, 0.15);
+            color: var(--text);
+        }
+
+        .btn-home:hover {
+            background: #e6ece4;
+        }
+
+        .cv-card {
+            background: var(--panel);
+            border: 1px solid rgba(115, 136, 120, 0.18);
+            border-radius: 20px;
+            padding: 24px 24px 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cv-card::before {
+            content: "";
+            position: absolute;
+            left: 90px;
+            top: 70px;
+            bottom: 50px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--green) 0%, var(--green) 100%);
+        }
+
+        .cv-card::after {
+            content: "";
+            position: absolute;
+            left: 72px;
+            top: 72px;
+            width: 36px;
+            height: 36px;
+            border: 3px solid var(--green-deep);
+            border-radius: 50%;
+            background: transparent;
+            transform: rotate(45deg);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.2rem, 3vw, 3.4rem);
+            line-height: 1.1;
+            text-align: center;
+            margin: 18px 0 18px;
+            color: var(--green-deep);
+            letter-spacing: 0.04em;
+            font-weight: 600;
+            position: relative;
+        }
+
+        h1 .cap {
+            display: inline-block;
+            position: relative;
+        }
+
+        h1 .cap::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            width: 120%;
+            height: 18px;
+            border: 3px solid rgba(106, 154, 115, 0.7);
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-radius: 50%;
+        }
+
+        .timeline {
+            position: relative;
+            margin-left: 120px;
+            padding-top: 20px;
+        }
+
+        .item {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 32px;
+            min-height: 90px;
+        }
+
+        .item::before {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            background: var(--green-deep);
+            border-radius: 50%;
+            border: 3px solid #f5f7f1;
+            box-shadow: 0 0 0 2px var(--green-deep);
+        }
+
+        .year {
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--green-deep);
+        }
+
+        .title {
+            font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+            font-weight: 700;
+            margin: 0 0 8px;
+            color: var(--text);
+        }
+
+        .desc {
+            margin: 0;
+            line-height: 1.6;
+            color: var(--muted);
+            max-width: 760px;
+            font-size: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-bottom: 6px;
+            color: var(--green-deep);
+            font-weight: 700;
+        }
+
+        @media (max-width: 700px) {
+            .page { padding: 12px; }
+            .cv-shell { padding: 16px; }
+            .toolbar { display: flex; justify-content: center; }
+            .cv-card::before { left: 32px; }
+            .cv-card::after { left: 14px; }
+            .timeline {
+                margin-left: 50px;
+                padding-top: 10px;
+            }
+            .item { padding-left: 18px; }
+            .item::before { left: -22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="cv-shell">
+            <div class="toolbar">
+                <a href="index.html" class="btn btn-home">Torna al sito</a>
+            </div>
+
+            <div class="cv-card">
+                <h1><span class="cap">Curriculum professionale</span></h1>
+
+                <div class="timeline">
+                    <div class="item">
+                        <div class="year">Dal 1998 </div>
+                        <p class="desc">Psicologo e psicoterapeuta.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Dal 1999 al 2010</div>
+                        <p class="desc">Docente di Psicologia sociale e Psicologia dello sviluppo presso l’Università degli Studi di Roma “La Sapienza”.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Dal 2000 Servizi alla persona</div>
+                        <p class="desc">Professionista nella progettazione e nell’avvio di startup di servizi alla persona. Ha coordinato la selezione e formazione di psicologi, assistenti sociali, tecnici dei servizi sociali, OSS, ADEST e OTA per strutture pubbliche e private.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Contrasto al bullismo</div>
+                        <p class="desc">Coordinatore per il Ministero della Pubblica Istruzione – Ufficio Scolastico Regionale per il Lazio – Osservatorio Regionale Permanente sul Bullismo.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Psicologia dell’emergenza</div>
+                        <p class="desc">Membro del gruppo di Psicologia dell’Emergenza dell’Ordine degli Psicologi del Lazio.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">ALICE Lazio</div>
+                        <p class="desc">Psicologo presso ALICE Lazio (Associazione per la Lotta all’Ictus Cerebrale), con attività di sostegno ai caregiver.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Roma Capitale</div>
+                        <p class="desc">Ha coordinato il primo centro diurno per persone con Alzheimer . Ha inoltre coordinato un centro residenziale per minori stranieri non accompagnati.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Formazione teatrale</div>
+                        <p class="desc">Ha studiato teatro presso l’Accademia Nazionale d’Arte Drammatica “Silvio D’Amico” di Roma.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Progetto Caregiver</div>
+                        <p class="desc">Ideato e sperimentato il progetto “Caregiver mai soli” per il supporto ai familiari di pazienti con demenza senile e/o alzheimer.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="year">Teatroterapia</div>
+                        <p class="desc">
+                            Conduce workshop di teatroterapia, mediati dall’arteterapia, nell’ambito della prevenzione e della promozione del benessere psicofisico della persona.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

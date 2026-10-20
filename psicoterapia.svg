@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" role="img" aria-labelledby="title desc">
+  <title id="title">Colloquio di psicoterapia</title>
+  <desc id="desc">Un terapeuta e un paziente adulto conversano seduti in uno studio accogliente.</desc>
+  <rect width="520" height="380" rx="24" fill="#e8f0e8"/>
+  <circle cx="430" cy="74" r="36" fill="#d8e6d8"/>
+  <path d="M68 316h384" stroke="#b8d4b9" stroke-width="4" stroke-linecap="round"/>
+  <path d="M122 223c0-12 10-22 22-22h106c12 0 22 10 22 22v75H122z" fill="#88aa8e"/>
+  <path d="M138 293v26m98-26v26" stroke="#567b60" stroke-width="9" stroke-linecap="round"/>
+  <path d="M126 223c0-35 27-62 61-62h23c34 0 61 27 61 62v13H126z" fill="#4a7c59"/>
+  <path d="M155 115c0-32 23-57 54-57s54 25 54 57v24c0 31-24 55-54 55s-54-24-54-55z" fill="#f2bd98"/>
+  <path d="M151 119c-5-49 20-77 61-77 38 0 61 30 55 75-10-7-17-18-22-31-17 17-49 24-94 23z" fill="#59463e"/>
+  <path d="M172 124c5-5 12-5 17 0m35 0c5-5 12-5 17 0" fill="none" stroke="#3f403a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M196 149c7 6 16 6 23 0" fill="none" stroke="#a65d56" stroke-width="3" stroke-linecap="round"/>
+  <path d="M271 215c0-11 9-20 20-20h93c11 0 20 9 20 20v78H271z" fill="#c7d9c8"/>
+  <path d="M293 290v28m89-28v28" stroke="#718f77" stroke-width="9" stroke-linecap="round"/>
+  <path d="M278 215c0-32 25-57 57-57h7c32 0 57 25 57 57v13H278z" fill="#789b81"/>
+  <path d="M299 116c0-31 23-55 51-55s51 24 51 55v22c0 30-22 52-51 52s-51-22-51-52z" fill="#dca783"/>
+  <path d="M295 119c-7-42 13-72 54-72 40 0 61 28 55 72-10-8-17-18-23-33-19 18-45 28-86 27z" fill="#c5a174"/>
+  <path d="M315 125c5-5 11-5 16 0m34 0c5-5 11-5 16 0" fill="none" stroke="#3f403a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M337 149c7 6 15 6 22 0" fill="none" stroke="#a65d56" stroke-width="3" stroke-linecap="round"/>
+  <path d="M230 222c24-15 47-14 68 4l26 22-14 16-34-17-38 12z" fill="#f2bd98"/>
+  <path d="M267 227l-13 35-15 29" fill="none" stroke="#f2bd98" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M332 224c-21-8-42-1-58 18l-20 22 15 14 33-20 37 7z" fill="#dca783"/>
+  <path d="M302 231l14 29 22 25" fill="none" stroke="#dca783" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="238" y="273" width="48" height="37" rx="4" transform="rotate(-8 238 273)" fill="#f8faf6" stroke="#6a8c70" stroke-width="3"/>
+  <path d="m247 284 27-4m-25 14 20-3" stroke="#b8d4b9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M421 276c10-24 22-35 36-37m-30 42c13-14 27-19 43-16" fill="none" stroke="#6f9876" stroke-width="6" stroke-linecap="round"/>
+  <path d="M446 292h32v24h-32z" fill="#d9c8a2"/>
+</svg>

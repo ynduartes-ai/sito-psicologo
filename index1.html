@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Messaggio inviato | Dr. Salvatore Traina</title>
+
+  <!-- Stessi font del sito (se nel tuo index.html la riga dei font è diversa, copia quella) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stesso foglio di stile del sito: eredita font, colori e pulsanti -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .thanks {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: linear-gradient(135deg, #edf4ee 0%, #dfead8 100%);
+    }
+
+    .thanks-card {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 18px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: 0 20px 45px rgba(27, 54, 39, 0.12);
+      max-width: 540px;
+      width: 100%;
+    }
+
+    .thanks-card h1 {
+      margin: 0 0 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      color: #2c3e50;
+    }
+
+    .thanks-card p {
+      margin: 0 0 24px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #4d5a58;
+    }
+  </style>
+</head>
+<body>
+  <main class="thanks">
+    <div class="thanks-card">
+      <h1>Messaggio inviato</h1>
+      <p>Grazie per avermi contattato. Ti risponderò al più presto, di solito entro 24-48 ore.</p>
+      <a class="btn btn-primary" href="/">Torna alla home</a>
+    </div>
+  </main>
+</body>
+</html>
